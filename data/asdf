@@ -1,0 +1,4 @@
+select o.Id, s.CompanyName from [Order] as o
+join Shipper as s
+on o.ShipVia = s.Id
+where OrderDate < date(2012-04-09)
